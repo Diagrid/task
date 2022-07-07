@@ -1,0 +1,262 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="libs/css/styles.css">
+
+		<title>AJAX/PHP/CURL/JSON example</title>
+		<meta name="description" content="AJAX/PHP/CURL/JSON example">
+		<meta name="author" content="Jack Wooler">
+
+	</head>
+
+	<body>
+
+		<div class="table">
+			
+			
+				<table class="tg">
+				<thead>
+				  <tr>
+					<th class="tg-0lax">API name</th>
+					<th class="tg-0lax">API description</th>
+					<th class="tg-0lax"></th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td class="tg-0lax">Coastal Towns</td>
+					<td class="tg-0lax">
+
+<!-----------------------Wikipedia------------------------------------->
+
+<br><br>
+
+
+
+<div id="divResults3" class="table">
+
+	<table>
+		<tr>
+			<td class="tg-0lax" align="right">
+				Name: 
+			</td>
+			<td id="txtTitle">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="tg-0lax" align="right">
+				Summary: 
+			</td>
+			<td id="txtSummary">
+			</td>
+		</tr>
+
+		<tr>
+			<td align="right">
+				Wikipedia link: 
+			</td>
+			<td id="txtLink">
+			</td>
+		</tr>
+
+		<tr>
+			<td align="right">
+				Latitude: 
+			</td>
+			<td id="txtLat">
+			</td>
+		</tr>
+		
+		<tr>
+			<td align="right">
+				Longitude: 
+			</td>
+			<td id="txtLng">
+			</td>
+		</tr>
+
+		
+	
+	</table>
+
+</div>
+
+
+
+					</td>
+					<td class="tg-0lax">
+						<select id="selLoc">
+							<option selected="selected" value="eastbourne">Eastbourne</option>
+							<option value="brighton">Brighton</option>
+							<option value="hastings">Hastings</option>
+							<option value="bournemouth">Bournemouth</option>
+						</select>
+						
+						
+						<button id="btnRun3">Run</button>
+					</td>
+				  </tr>
+				  <tr>
+					<td class="tg-0lax">Weather</td>
+					<td class="tg-0lax">
+
+
+
+<!-----------------------Weather------------------------------------->
+
+
+<br><br><br><br>
+
+
+
+
+
+
+<div id="divResults2">
+
+	<table>
+		
+		<tr>
+			<td align="right">
+				Station Name: 
+			</td>
+			<td id="txtStation">
+			</td>
+		</tr>
+		
+		
+		<tr>
+			<td align="right">
+				Temperature (Celsius): 
+			</td>
+			<td id="txtTemperature">
+			</td>
+		</tr>
+
+		<tr>
+			<td align="right">
+				Humidity: 
+			</td>
+			<td id="txtHumidity">
+			</td>
+		</tr>
+
+		<tr>
+			<td align="right">
+				Wind Speed (Knots): 
+			</td>
+			<td id="txtWindSpeed">
+			</td>
+		</tr>
+
+		<tr>
+			<td align="right">
+				Wind Direction (Degrees): 
+			</td>
+			<td id="txtWindDirection">
+			</td>
+		</tr>
+
+		<tr>
+			<td align="right">
+				Clouds:
+			</td>
+			<td id="txtClouds">
+			</td>
+		</tr>
+
+	</table>
+
+</div>
+
+					</td>
+					<td class="tg-0lax">
+						<label for="points">Latitude:</label>
+						<input type="number" id="selLat" name="points" min="-90" max="90">
+
+						<label for="points">Longitude:</label>
+						<input type="number" id="selLng" name="points" min="-180" max="180">
+
+
+						<button id="btnRun2">Run</button>
+					</td>
+				  </tr>
+				  
+
+
+
+<!-----------------------See nearby wiki events------------------------------------->
+
+<tr>
+	<td class="tg-0lax">Nearby History</td>
+	<td class="tg-0lax">
+
+<br><br><br><br>
+
+
+<div id="divResults4">
+
+	<table>
+		
+		<tr>
+			<td align="right">
+				Summary: 
+			</td>
+			<td id="txtSummary1">
+			</td>
+		</tr>
+
+		<tr>
+			<td align="right">
+				Wikipedia Link: 
+			</td>
+			<td id="txtLink1">
+			</td>
+		</tr>
+
+	</table>
+
+</div>
+
+
+				</td>
+					<td class="tg-0lax">
+						<label for="points">Latitude:</label>
+						<input type="number" id="selLat1" name="points" min="-90" max="90">
+
+						<label for="points">Longitude:</label>
+						<input type="number" id="selLng1" name="points" min="-180" max="180">
+
+
+						<button id="btnRun4">Run</button>
+					</td>
+				  </tr>
+				</tbody>
+				</table>
+		</div>
+
+
+<!-----------------------Results------------------------------------->
+
+
+		<div class="results">
+			<p>Results</p>
+		</div>
+
+
+<!-----------------------Scripts------------------------------------->
+
+
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+
+
+	</body>
+
+</html>
